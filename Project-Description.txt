@@ -1,0 +1,17 @@
+XML Document Model project has a parsing system, that parses an xml file or an xml string and create a document object which can queried. 
+We can get information about the xml file or xml string and also make modification to the content.
+After modification to the content we can store the new content to a new xml file.
+
+XmlReader is used to read the xml file or string given. When the xml file has started being read, the document element(Tree structure) is made in XmlDocument. 
+The document element can have children elements like  
+	- ProcessInstructionElement(eg: <?xml xml version="1"?>),
+	- CommentElement(eg: <!--Hello-->)
+	- TaggedElement(<book>Harry Potter</book>)
+	- TextElement
+The tree can also store attributes for the elements that contain the same.
+
+Once the document element is made, we can iterate through it and try to find a particular element and its children. We can also add a child or remove a child from element. Similarly, we can also add attributes and remove attributes from an element. After the changes are made, the changes are saved in a new xml file.
+
+
+
+
